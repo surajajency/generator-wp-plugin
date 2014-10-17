@@ -5,14 +5,14 @@ var path    = require('path');
 var helpers = require('yeoman-generator').test;
 
 
-describe('wordpress-plugin generator', function () {
+describe('wp-plugin generator', function () {
   beforeEach(function (done) {
     helpers.testDirectory(path.join(__dirname, 'temp'), function (err) {
       if (err) {
         return done(err);
       }
 
-      this.app = helpers.createGenerator('wordpress-plugin:app', [
+      this.app = helpers.createGenerator('wp-plugin:app', [
         '../../app'
       ]);
       done();

@@ -1,5 +1,5 @@
-# Generator-wordpress-plugin
-[![Build Status](https://secure.travis-ci.org/srsgores/generator-wordpress-plugin.png?branch=master)](https://travis-ci.org/srsgores/generator-wordpress-plugin)
+# Generator-wp-plugin
+[![Build Status](https://secure.travis-ci.org/surajajency/generator-wp-plugin.png?branch=master)](https://travis-ci.org/surajajency/generator-wp-plugin)
 
 A wordpress plugin generator for Yeoman.
 
@@ -7,8 +7,8 @@ This will make your life a lot easier as a Wordpress plugin developer.  Simply t
 
 ## Getting started
 1. Make sure you have [yo](https://github.com/yeoman/yo) installed: `npm install -g yo`
-2. Install the generator: `npm install -g generator-wordpress-plugin`
-3. Run: `yo wordpress-plugin`
+2. Install the generator: `npm install -g generator-wp-plugin`
+3. Run: `yo wp-plugin`
 4. Provide the information as it is required
 
 ## Contributing

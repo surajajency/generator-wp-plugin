@@ -19,11 +19,11 @@ class <%= _.camelize(name) %>{
 	/**
 	 * Plugin version, used for cache-busting of style and script file references.
 	 *
-	 * @since   1.0.0
+	 * @since   0.1.0
 	 *
 	 * @var     string
 	 */
-	protected $version = "1.0.0";
+	protected $version = "0.1.0";
 
 	/**
 	 * Unique identifier for your plugin.
@@ -31,7 +31,7 @@ class <%= _.camelize(name) %>{
 	 * Use this value (not the variable name) as the text domain when internationalizing strings of text. It should
 	 * match the Text Domain file header in the main plugin file.
 	 *
-	 * @since    1.0.0
+	 * @since    0.1.0
 	 *
 	 * @var      string
 	 */
@@ -40,7 +40,7 @@ class <%= _.camelize(name) %>{
 	/**
 	 * Instance of this class.
 	 *
-	 * @since    1.0.0
+	 * @since    0.1.0
 	 *
 	 * @var      object
 	 */
@@ -49,7 +49,7 @@ class <%= _.camelize(name) %>{
 	/**
 	 * Slug of the plugin screen.
 	 *
-	 * @since    1.0.0
+	 * @since    0.1.0
 	 *
 	 * @var      string
 	 */
@@ -58,7 +58,7 @@ class <%= _.camelize(name) %>{
 	/**
 	 * Initialize the plugin by setting localization, filters, and administration functions.
 	 *
-	 * @since     1.0.0
+	 * @since     0.1.0
 	 */
 	private function __construct() {
 
@@ -85,7 +85,7 @@ class <%= _.camelize(name) %>{
 	/**
 	 * Return an instance of this class.
 	 *
-	 * @since     1.0.0
+	 * @since     0.1.0
 	 *
 	 * @return    object    A single instance of this class.
 	 */
@@ -102,7 +102,7 @@ class <%= _.camelize(name) %>{
 	/**
 	 * Fired when the plugin is activated.
 	 *
-	 * @since    1.0.0
+	 * @since    0.1.0
 	 *
 	 * @param    boolean $network_wide    True if WPMU superadmin uses "Network Activate" action, false if WPMU is disabled or plugin is activated on an individual blog.
 	 */
@@ -113,7 +113,7 @@ class <%= _.camelize(name) %>{
 	/**
 	 * Fired when the plugin is deactivated.
 	 *
-	 * @since    1.0.0
+	 * @since    0.1.0
 	 *
 	 * @param    boolean $network_wide    True if WPMU superadmin uses "Network Deactivate" action, false if WPMU is disabled or plugin is deactivated on an individual blog.
 	 */
@@ -124,7 +124,7 @@ class <%= _.camelize(name) %>{
 	/**
 	 * Load the plugin text domain for translation.
 	 *
-	 * @since    1.0.0
+	 * @since    0.1.0
 	 */
 	public function load_plugin_textdomain() {
 
@@ -138,7 +138,7 @@ class <%= _.camelize(name) %>{
 	/**
 	 * Register and enqueue admin-specific style sheet.
 	 *
-	 * @since     1.0.0
+	 * @since     0.1.0
 	 *
 	 * @return    null    Return early if no settings page is registered.
 	 */
@@ -159,7 +159,7 @@ class <%= _.camelize(name) %>{
 	/**
 	 * Register and enqueue admin-specific JavaScript.
 	 *
-	 * @since     1.0.0
+	 * @since     0.1.0
 	 *
 	 * @return    null    Return early if no settings page is registered.
 	 */
@@ -180,7 +180,7 @@ class <%= _.camelize(name) %>{
 	/**
 	 * Register and enqueue public-facing style sheet.
 	 *
-	 * @since    1.0.0
+	 * @since    0.1.0
 	 */
 	public function enqueue_styles() {
 		wp_enqueue_style($this->plugin_slug . "-plugin-styles", plugins_url("css/public.css", __FILE__), array(),
@@ -190,7 +190,7 @@ class <%= _.camelize(name) %>{
 	/**
 	 * Register and enqueues public-facing JavaScript files.
 	 *
-	 * @since    1.0.0
+	 * @since    0.1.0
 	 */
 	public function enqueue_scripts() {
 		wp_enqueue_script($this->plugin_slug . "-plugin-script", plugins_url("js/public.js", __FILE__), array("jquery"),
@@ -200,7 +200,7 @@ class <%= _.camelize(name) %>{
 	/**
 	 * Register the administration menu for this plugin into the WordPress Dashboard menu.
 	 *
-	 * @since    1.0.0
+	 * @since    0.1.0
 	 */
 	public function add_plugin_admin_menu() {
 		$this->plugin_screen_hook_suffix = add_plugins_page(__("<%= name %> - Administration", $this->plugin_slug),
@@ -210,7 +210,7 @@ class <%= _.camelize(name) %>{
 	/**
 	 * Render the settings page for this plugin.
 	 *
-	 * @since    1.0.0
+	 * @since    0.1.0
 	 */
 	public function display_plugin_admin_page() {
 		include_once("views/admin.php");
@@ -223,7 +223,7 @@ class <%= _.camelize(name) %>{
 	 *        WordPress Actions: http://codex.wordpress.org/Plugin_API#Actions
 	 *        Action Reference:  http://codex.wordpress.org/Plugin_API/Action_Reference
 	 *
-	 * @since    1.0.0
+	 * @since    0.1.0
 	 */
 	public function action_method_name() {
 		// TODO: Define your action hook callback here
@@ -236,7 +236,7 @@ class <%= _.camelize(name) %>{
 	 *        WordPress Filters: http://codex.wordpress.org/Plugin_API#Filters
 	 *        Filter Reference:  http://codex.wordpress.org/Plugin_API/Filter_Reference
 	 *
-	 * @since    1.0.0
+	 * @since    0.1.0
 	 */
 	public function filter_method_name() {
 		// TODO: Define your filter hook callback here

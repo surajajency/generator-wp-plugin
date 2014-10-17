@@ -10,11 +10,11 @@
  * @link      <%= authorURL %>
  * @copyright <%= currentDate %> <%= authorCompanyName %>
  *
- * @wordpress-plugin
+ * @wp-plugin
  * Plugin Name: <%= name %>
  * Plugin URI:  <%= authorURL %>
  * Description: <%= description %>
- * Version:     1.0.0
+ * Version:     0.1.0
  * Author:      <%= authorName %>
  * Author URI:  <%= authorURL %>
  * Text Domain: <%= safePluginName %>-locale

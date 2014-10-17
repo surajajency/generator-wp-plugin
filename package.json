@@ -1,21 +1,21 @@
 {
-	"name": "generator-wordpress-plugin",
-	"version": "0.0.0",
+	"name": "generator-wp-plugin",
+	"version": "0.1.0",
 	"description": "A Yeoman generator for creating new Wordpress plugins",
 	"keywords": [
 		"yeoman-generator"
 	],
-	"homepage": "https://github.com/srsgores/generator-wordpress-plugin",
-	"bugs": "https://github.com/srsgores/generator-wordpress-plugin/issues",
+	"homepage": "https://github.com/surajajency/generator-wp-plugin",
+	"bugs": "https://github.com/surajajency/generator-wp-plugin/issues",
 	"author": {
-		"name": "Sean Goresht",
-		"email": "seangores@gmail.com",
-		"url": "https://github.com/srsgores"
+		"name": "Suraj Air",
+		"email": "suraj@ajency.in",
+		"url": "https://github.com/surajajency"
 	},
 	"main": "app/index.js",
 	"repository": {
 		"type": "git",
-		"url": "git://github.com/srsgores/generator-wordpress-plugin.git"
+		"url": "git://github.com/surajajency/generator-wp-plugin.git"
 	},
 	"scripts": {
 		"test": "mocha"
