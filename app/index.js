@@ -130,7 +130,7 @@ wpPluginGenerator.prototype.projectfiles = function projectfiles() {
     this.copy("jshintrc", ".jshintrc");
 };
 
-wpPluginGenerator.prototype.setUpTestingEnv = function projectfiles() {
+wpPluginGenerator.prototype.setUpTestingEnv = function setUpTestingEnv() {
     var cb = this.async();
     exec("wp scaffold plugin-tests " + this.safePluginName, function(error, stdout, stderr) {
         cb();
